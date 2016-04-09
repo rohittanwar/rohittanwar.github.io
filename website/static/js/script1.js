@@ -58,22 +58,5 @@ function mainpage()
 }); 
 }
 $(function () {
-    firsttext();
-    mainpage();
-    
-  /*for header changes */
-  var lastScrollTop = 0;
-  $(window).scroll(function(event){
-    var st = $(this).scrollTop();
-  if(st > lastScrollTop){
-       // downscroll code
-       //$("nav").css("position","relative");
-       $("nav").removeClass("navbar-fixed-top");
-   } 
-  else {
-      // upscroll code
-     $("nav").addClass("navbar-fixed-top");
-   }
-   lastScrollTop = st;
-  });
+   
 })
