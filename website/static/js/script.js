@@ -1,9 +1,9 @@
 $(function() {
-    
-    var s = Snap(775,250);
+    $("html,body").animate({scrollTop: 0}, 100); //100ms for example
+    var s = Snap(562,183);
     s.node.id = 'main_logo';
     Snap.load("../../static/start.svg", onSVGLoaded);
-
+    $("#main_logo").appendTo("#section1");
     function onSVGLoaded(f) {
         logo = f.selectAll(".logo");
         welcome = f.selectAll(".welcome");
@@ -56,23 +56,43 @@ $(function() {
                 copies.attr({
                 visibility : "visible"
                 });
+                $(".text-copy:eq(0)").bind('oanimationend animationend webkitAnimationEnd', function() { 
+                    $("#desc").fadeIn(100);
+                });
             });
             }
         }
     }
-   
-    /*for header changes */
-    var lastScrollTop = 0;
-    $(window).scroll(function(event) {
-        var st = $(this).scrollTop();
-        if (st > lastScrollTop) {
-            // downscroll code
-            //$("nav").css("position","relative");
-            $("nav").removeClass("navbar-fixed-top");
-        } else {
-            // upscroll code
-            $("nav").addClass("navbar-fixed-top");
-        }
-        lastScrollTop = st;
-    });
+
+
+   $('#toggle-btn').on('click', function(event) {
+    
+    if ( $(this).hasClass('active') ) {
+        $(this).removeClass('active');
+    } else {
+        $(this).addClass('active');
+    }
+});
+
+   $("#nav-toggle").on('click',function(event){
+    event.preventDefault();
+    if($(this).hasClass("active"))
+    {
+        $(this).removeClass("active");
+        $("#js-nav").velocity({marginLeft:"-135%"},{duration : 600},[5000,20]);
+    }
+    else
+    {
+        $(this).addClass("active");
+        $("#js-nav").velocity({marginLeft:"0px"},{duration : 600},[5000,20]);
+    }
+  });
 })
+
+// Parallaxing + add class active on scroll
+$(document).scroll(function () {
+  
+  // parallaxing
+  //var $movebg = $(window).scrollTop() * -0.3;
+ // $('.portion').css('background-positionY', ($movebg) + 'px');
+});

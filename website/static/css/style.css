@@ -2,24 +2,86 @@
   {
     margin: 0px;
     padding : 0px;
-    background: #333;
-  }
-  #sound
-  {
-    position: fixed;
-  }
-  [hidden]
-  {
-  	display: block;
   }
    #container_main
   {
-	  position: relative;
+    background: #222222;
 	  width: 100%;
 	  height: 100%;
 	  overflow: auto;
 	  padding : 0 0 0 0;
   }
+  .shadowed_heading
+  {
+    text-shadow: 
+      1px -1px 0 #767676, 
+      -1px 2px 1px #737272, 
+      -2px 4px 1px #7b7a7a, 
+      -3px 6px 1px #828181, 
+      -4px 8px 1px #868585, 
+      -5px 10px 1px #8f8e8d, 
+      -6px 12px 1px #949392, 
+      -7px 14px 1px #9e9c9c, 
+      -8px 16px 1px #a3a1a1, 
+      -9px 18px 1px #adabab, 
+      -10px 20px 1px #b2b1b0, 
+      -11px 22px 1px #bcbbba, 
+      -12px 24px 1px #c1bfbf, 
+      -13px 26px 1px #cbc9c8, 
+      -14px 28px 1px #cfcdcd, 
+      -15px 30px 1px #d8d6d5, 
+      -16px 32px 1px #dbdad9, 
+      -17px 34px 1px #e2e0df, 
+      -18px 36px 1px #e4e3e2;
+  }
+  #section1
+{
+  background : #1F1F1F ;
+  position: relative;
+  height: 670px;
+}
+.sec_2_3 .content
+{
+    margin: 0 auto;
+    width: 90%;
+    text-align: center;
+}
+.sec_2_3 .content h2
+{
+    margin-top: 0px;
+    font-size: 400%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    margin-bottom: 0.625em;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+     color: #131313;
+    letter-spacing: .15em;
+}
+.sec_2_3 .content p
+{
+  margin-top: 75px;
+    color: #706f6f;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .08em;
+    padding: 0 10%;
+    font-weight: 500;
+}
+#section2
+{
+  background: #f8f8f8;
+  padding: 5.5em 0;
+}
+#section3
+{
+  background: #ffffff;
+  padding: 7.5em 0;
+}
+#section4
+{
+ background: #abc356;
+}
   #main_logo
   {
   	 position:absolute; /*it can be fixed too*/
@@ -27,3 +89,101 @@
         top:0; bottom:0;
         margin:auto;
   }
+  #desc
+  {
+    display: none;
+    position: absolute;
+    text-align: center;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px 0px 120px 0px;
+    left: 0px; 
+  }
+#desc h3
+{
+  color : #ffffff;
+}
+#arrow
+{
+      height: 40px;
+    width: 40px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    /* display: block; */
+    margin: 0 auto 20px auto;
+  
+}
+#nav-toggle { 
+  z-index: 99;
+  position: fixed;
+ left: 30px; 
+ top: 30px; 
+}
+#nav-toggle { 
+  cursor: pointer; 
+  padding: 10px 35px 16px 0px; }
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: white;
+  position: absolute;
+  display: block;
+  content: '';
+}
+#nav-toggle span:before {
+  top: -10px; 
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+  transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+#page_wrap {
+     width: 100%;
+     margin: 0 auto;
+}
+#js-nav
+{
+    background-image : url('../../static/images/weather.png');
+    background-repeat: repeat;
+    bottom: 0;
+    height: auto;
+    left: 0;
+    width: 100%;
+    margin-left: -135%;
+    overflow-y: none;
+    z-index: 80;
+    padding: 65px 100px 65px 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+#pic
+{
+  position: absolute;
+  right: 80px;
+  height: 500px;
+  width: 400px;
+  background-size: cover;
+  background-image: url(../../static/images/me.jpg);
+  background-position: center center;
+}
