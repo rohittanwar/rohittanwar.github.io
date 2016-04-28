@@ -82,13 +82,20 @@
 {
  background: #abc356;
 }
+  #my-svg-container
+  {
+    max-width: 640px;
+    margin: 0 auto;
+    height: 670px;
+  }
   #main_logo
   {
-  	 position:absolute; /*it can be fixed too*/
+  	  /*it can be fixed too*/
         left:0; right:0;
         top:0; bottom:0;
         margin:auto;
   }
+
   #desc
   {
     display: none;
@@ -96,7 +103,7 @@
     text-align: center;
     right: 0px;
     bottom: 0px;
-    margin: 0px 0px 120px 0px;
+    margin: 0px 0px 80px 0px;
     left: 0px; 
   }
 #desc h3
@@ -163,8 +170,10 @@
 }
 #js-nav
 {
-    background-image : url('../../static/images/weather.png');
-    background-repeat: repeat;
+    background-image : url('../../static/images/blue.jpg');
+    background-size:     cover;
+    background-repeat:   no-repeat;
+    background-position: center center;  
     bottom: 0;
     height: auto;
     left: 0;
@@ -177,13 +186,44 @@
     right: 0;
     top: 0;
 }
-#pic
+#about
 {
   position: absolute;
   right: 80px;
   height: 500px;
   width: 400px;
-  background-size: cover;
-  background-image: url(../../static/images/me.jpg);
-  background-position: center center;
+}
+#section3 .logos {
+    height: 125px;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+    /* just for demo */
+    min-width: 612px;
+}
+
+#logo1, #logo2, #logo3{
+    vertical-align: top;
+    display: inline-block;
+    zoom: 1;
+    width : 100px;
+    height : 100px;
+    background-size: cover;
+}
+#logo1
+{
+  background-image: url('../../static/images/android.jpg');
+}
+#logo2
+{
+  background-image: url('../../static/images/algo.png');
+}
+#logo3
+{
+  background-image: url('../../static/images/web1.png');
+}
+.stretch {
+    width: 100%;
+    display: inline-block;
+    line-height: 0
 }

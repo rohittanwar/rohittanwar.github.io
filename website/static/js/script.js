@@ -1,9 +1,9 @@
 $(function() {
     $("html,body").animate({scrollTop: 0}, 100); //100ms for example
-    var s = Snap(562,183);
+    var s = Snap();
     s.node.id = 'main_logo';
     Snap.load("../../static/start.svg", onSVGLoaded);
-    $("#main_logo").appendTo("#section1");
+    $("#main_logo").appendTo("#my-svg-container");
     function onSVGLoaded(f) {
         logo = f.selectAll(".logo");
         welcome = f.selectAll(".welcome");
@@ -36,10 +36,10 @@ $(function() {
         });
         setTimeout(function () {
             animate();
-        }, 1000);
+        }, 750);
         function animate()
         {
-            welcome.animate({ strokeDashoffset: -600, opacity : 0 }, 1500 , mina.linear ,function hide_welcome()
+            welcome.animate({ strokeDashoffset: -600, opacity : 0 }, 1000 , mina.linear ,function hide_welcome()
             {
                 welcome.attr({
                 display : "none"
