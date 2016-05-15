@@ -33,6 +33,20 @@
       -16px 32px 1px #dbdad9, 
       -17px 34px 1px #e2e0df, 
       -18px 36px 1px #e4e3e2;
+
+          margin-top: 0px;
+    font-size: 400%;
+    font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    margin-bottom: 0.625em;
+    font-weight: 200;
+    text-transform: uppercase;
+    text-rendering: optimizeLegibility;
+    color: #131313;
+    letter-spacing: .15em;
+  }
+  #section3 .row
+  {
+    margin-top : 90px;
   }
   #section1
 {
@@ -46,7 +60,7 @@
     width: 90%;
     text-align: center;
 }
-.sec_2_3 .content h2
+.sec_2_3 .content .shadowed_heading
 {
     margin-top: 0px;
     font-size: 400%;
