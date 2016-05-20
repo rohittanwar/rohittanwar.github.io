@@ -1,9 +1,14 @@
+/* Document Ready JS part */
+
 $(function() {
     $("html,body").animate({scrollTop: 0}, 100); //100ms for example
     var s = Snap();
     s.node.id = 'main_logo';
     Snap.load("../../static/start.svg", onSVGLoaded);
     $("#main_logo").appendTo("#my-svg-container");
+
+    /* Javascript for SVG LOGO ie - Welcome->I am->ROHIT */
+
     function onSVGLoaded(f) {
         logo = f.selectAll(".logo");
         welcome = f.selectAll(".welcome");
@@ -20,9 +25,11 @@ $(function() {
         for(j=0;j<welcome.length;j++)
         len3 += Snap.path.getTotalLength(welcome[j].attr("d"));
 
+        /*
         console.log(len1 + "is the length1");
         console.log(len2 + "is the length2");
         console.log(len3 + "is the length3");
+        */
         var neg2 = -Math.abs(len2);
         var neg3 = -Math.abs(len3);
         
@@ -63,8 +70,11 @@ $(function() {
             }
         }
     }
+    /* Javascript for SVG LOGO ie - Welcome->I am->ROHIT ENDS */
 
+   
 
+    /*
    $('#toggle-btn').on('click', function(event) {
     
     if ( $(this).hasClass('active') ) {
@@ -73,6 +83,9 @@ $(function() {
         $(this).addClass('active');
     }
 });
+*/
+  
+ /* JS for Navigation button */
 
    $("#nav-toggle").on('click',function(event){
     event.preventDefault();
@@ -87,7 +100,19 @@ $(function() {
         $("#js-nav").velocity({marginLeft:"0px"},{duration : 600},[5000,20]);
     }
   });
-})
+
+/* JS ends */ 
+
+/* JS For Hover over items ie- Android,Software and Web */
+
+$('.items').mouseenter(function () {
+        $(this).find("h2").css("visibility","visible");
+        }).mouseleave(function () {
+      $(this).find("h2").css("visibility","hidden");
+    });
+
+/* Ends for items */
+}); 
 
 // Parallaxing + add class active on scroll
 $(document).scroll(function () {
