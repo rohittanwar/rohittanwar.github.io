@@ -119,11 +119,7 @@ $(document).scroll(function () {
   
 
     var scroll = $(window).scrollTop();
-    if(scroll>700)
-    {
-    console.log(scroll);
     
-    }
     // Do something
   // parallaxing
   //var $movebg = $(window).scrollTop() * -0.3;
