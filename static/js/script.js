@@ -117,6 +117,14 @@ $('.items').mouseenter(function () {
 // Parallaxing + add class active on scroll
 $(document).scroll(function () {
   
+
+    var scroll = $(window).scrollTop();
+    if(scroll>700)
+    {
+    console.log(scroll);
+    
+    }
+    // Do something
   // parallaxing
   //var $movebg = $(window).scrollTop() * -0.3;
  // $('.portion').css('background-positionY', ($movebg) + 'px');

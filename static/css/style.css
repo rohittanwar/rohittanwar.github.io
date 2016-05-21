@@ -41,7 +41,7 @@
   border-radius: 1px;
   height: 5px;
   width: 35px;
-  background: white;
+  background: #45ABB1;
   position: absolute;
   display: block;
   content: '';
@@ -89,10 +89,16 @@
 }
 #about
 {
-  position: absolute;
-  right: 80px;
-  height: 500px;
-  width: 400px;
+   position: absolute;
+    left: 150px;
+    top: 150px;
+    width: 400px;
+    color: #984C4C;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .08em;
+    
+    font-weight: 500;
 }
 .stretch {
     width: 100%;
@@ -119,6 +125,11 @@
 #desc h3
 {
   color : #ffffff;
+      font-family: 'Roboto', sans-serif;
+    font-size: 1.5em;
+    letter-spacing: .08em;
+    padding: 0 10%;
+    font-weight: 500;
 }
 #arrow
 {
@@ -286,11 +297,13 @@
 #section4
 {
  background: #f8f8f8;
- padding: 4.5em 0;
+ padding-top: 4.5em;
 }
 #section4 .container
 {
   width : 100%;
+   display: flex;
+  justify-content: center;
 }
 #section4 .content
 {
@@ -302,14 +315,23 @@
 }
 #section4 .description
 {
-    display: inline-table;
-    margin-right: 50px;
-    margin-left: 50px;
+    width: 50%;
+     align-self: center;
+     margin-right: 30px;
+     margin-left: 30px;
+      font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+    text-rendering: optimizeLegibility;
+    color: #f1f1f1;
+    letter-spacing: .15em;
 }
-#section4 .description2
+#section4 .description h2
 {
-    display: inline-table;
-    margin-right: 50px;
+  font-weight: bold;
+}
+#section4 .description p
+{
+    margin-top: 30px;
+    font-size: 120%;
 }
 #medaram
 {
